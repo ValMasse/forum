@@ -1,0 +1,12 @@
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">{{sujet.title}}</h5>
+        <p>Créé le : {{sujet.createdDate | date: 'dd/MM/yyyy'}} &nbsp; Modifié le : {{sujet.updatedDate | date:
+            'dd/MM/yyyy'}} &nbsp; Nombre de messages dans cette conversation : <span *ngIf ="sujet.messages">{{sujet.messages.length}}</span><span *ngIf ="!sujet.messages">0</span>
+            <span>{{sujet.like}} <img
+                    src="https://t3.ftcdn.net/jpg/04/30/32/10/360_F_430321024_DJqioTAz15vWBK5GyEqw6opu1rf5RakU.jpg"
+                    alt="image_like"></span>
+        </p>
+        <button type="button" class="btn btn-success" routerLink="/sujetDetail/{{sujet.id}}">Voir le sujet</button>
+    </div>
+</div>

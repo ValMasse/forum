@@ -1,0 +1,13 @@
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">{{message.content}}</h5>
+        <p>Créé le : {{message.createdDate | date: 'dd/MM/yyyy'}} &nbsp; Modifié le : {{message.updatedDate | date:
+            'dd/MM/yyyy'}}
+            <span>Likes : {{message.like}} <img
+                    src="https://t3.ftcdn.net/jpg/04/30/32/10/360_F_430321024_DJqioTAz15vWBK5GyEqw6opu1rf5RakU.jpg"
+                    alt="image_like"></span>
+        </p>
+        <button type="button" class="btn btn-info" (click)="like()">Liker</button>
+        <button type="button" class="btn btn-danger" (click)="unLike()">DisLiker</button>
+    </div>
+</div>

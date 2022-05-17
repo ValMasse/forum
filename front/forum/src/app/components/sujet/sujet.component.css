@@ -1,0 +1,12 @@
+img {
+    height: 80px;
+    width: 120px;
+}
+
+h5, p {
+    text-align: center;
+}
+
+span {
+    float: right;
+}

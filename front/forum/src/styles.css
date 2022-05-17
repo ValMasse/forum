@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+body {
+    background-image: url("https://thumbs.dreamstime.com/z/l-illustration-tridimensionnelle-de-la-souris-bleue-attach%C3%A9-au-mot-de-forum-et-au-monde-de-globe-sur-le-fond-blanc-30030123.jpg");
+    background-size: cover;
+}

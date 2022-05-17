@@ -1,0 +1,13 @@
+<div *ngIf="sujet" class="card" style="width: 18rem;">
+    <div class="card-header">
+      <h1>{{sujet.title}}</h1>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">{{sujet.createdDate | date: 'dd/MM/yyyy'}}</li>
+      <li class="list-group-item">{{sujet.updatedDate | date: 'dd/MM/yyyy'}}</li>
+      <li class="list-group-item">Likes : {{sujet.like}}</li>
+      <li class="list-group-item"><button type="button" class="btn btn-info" (click)="like()">Liker</button></li>
+      <li class="list-group-item"><button type="button" class="btn btn-danger" (click)="unLike()">DisLiker</button></li>
+    </ul>
+  </div>
+  <a class="nav-link" routerLink="/sujets"><button type="button" class="btn btn-warning">Retour à la liste</button></a>
